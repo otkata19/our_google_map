@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "3Bai Next",
+  "version": "1.0",
+  "description": "Enlarge 'next' link in Google search result.",
+  "homepage_url": "https://github.com/dadaa/3BaiNext",
+  "author": "Tanaka Keitaro",
+  "content_scripts": [
+    {
+      "matches": ["*://www.google.co.jp/search*",
+                  "*://www.google.com/search*", 
+                  "*://www.google.co.jp/maps/place/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
